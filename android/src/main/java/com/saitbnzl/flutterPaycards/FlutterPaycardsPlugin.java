@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.util.Log;
 
+import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
@@ -20,7 +21,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /** FlutterPaycardsPlugin */
-public class FlutterPaycardsPlugin implements MethodCallHandler, PluginRegistry.ActivityResultListener {
+public class FlutterPaycardsPlugin implements FlutterPlugin, MethodCallHandler, PluginRegistry.ActivityResultListener {
   private final Registrar mRegistrar;
   private Result mResult;
 
